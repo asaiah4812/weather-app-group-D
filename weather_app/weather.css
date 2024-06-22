@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* @import url('/ClashDisplay_Complete/Fonts/WEB/fonts/'); */
+
+.main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.219), rgba(0,0,0,0.6)), url('/weather_app/image/pexels-pixabay-531756.jpg');
+  background-position: center;
+  background-size: cover;
+ /* Adjust the opacity here */
+}
+
+span{
+    font-size: 16px;
+}
+
+.banner{
+    position: fixed;
+    top: 2%;
+    left: 0%;
+    right: 0%;
+    background: #fff;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.content{
+    flex-direction: column;
+    width: 30%;
+    background: rgba(255, 255, 255, 0.5);
+    /* min-height: 10rem; */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:15px;
+}
+
+@media(max-width:900px){
+    .content{
+        width: 50%;
+    }
+}
+
+@media(max-width:760px){
+    .content{
+        width: 60%;
+    }
+}
+
+@media(max-width:540px){
+    .content{
+        width: 90%;
+    }
+    .wind{
+        width: 40%;
+    }
+}
+
+.weath{
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.inputbox{
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 20px;
+}
+
+.inputbox::placeholder{
+    font-size: 18px;
+}
+
+.content button{
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #0c5077;
+}
+
+.form{
+    display: flex;
+    border: 1px solid #fafafa;
+    padding: 5px;
+    border-radius: 15px;
+    width: 100%;
+}
+.weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.status{
+    width: 200px;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+.status img{
+    width: 100%;
+}
+
+.degree{
+    text-align: center;
+}
+
+.degree h1{
+    font-size: 50px;
+}
+
+.degree span{
+    font-size: 25px;
+}
+
+.wind{
+    width: 50px;
+}
+
+.wind img{
+    width: 100%;
+}
+
+.wind-desc{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wind-item{
+    display: flex;
+    align-items: center;
+ gap: 10px;
+}
+
+.divider{
+    display: flex;
+    justify-content: space-around;
+}
+
+.wind-desc span{
+    font-size: 14px;
+}
+
+.invalid{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.invalid h1{
+    color: rgb(219, 9, 9);
+}
